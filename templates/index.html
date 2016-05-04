@@ -7,25 +7,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-  <style> 
-  #Button_group{
-    padding-top: 9px;
-  }
-  #mysql_info_text{
-    margin: 0;
-    text-align: center;
-    padding: 0;
-  }
-  #horizontal_line_below_button{
-    margin: 0;
-    padding-top: 3px;
-  }
-
-  </style>
-
-
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
 </head>
 <body>
   
@@ -38,6 +20,18 @@
     </form>
 
   </div>
+
+  <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Time Dimension
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+
+
+</div>
 
   <hr id = "horizontal_line_below_button">
   <p id="mysql_info_text"> MySQL Result below</p>
