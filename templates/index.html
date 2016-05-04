@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+  <style> 
+  #Button_group{
+    padding-top: 9px;
+  }
+  #mysql_info_text{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
+  #horizontal_line_below_button{
+    margin: 0;
+    padding-top: 3px;
+  }
+
+  </style>
+
+
+</head>
+<body>
+  
+  <div class="container" id= "Button_group">
+
+    <button id="tester" type="button" class="btn btn-primary">Test MySQL/Python Connection</button>
+
+    <form action="/test" method="GET">
+      <input type="submit" class="btn btn-info" value="Submit Button">
+    </form>
+
+  </div>
+
+  <hr id = "horizontal_line_below_button">
+  <p id="mysql_info_text"> MySQL Result below</p>
+
+  <hr>
+
+</body>
+</html>
