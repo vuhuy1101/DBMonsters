@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Applications/XAMPP/xamppfiles/htdocs/DBMonsters/flask"
+VIRTUAL_ENV="/Applications/XAMPP/xamppfiles/htdocs/DBMonsters/HV/flask"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

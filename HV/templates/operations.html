@@ -73,6 +73,9 @@
 					
 				}
 			</script>
-
+			{% block body %}
+			{{  variable|safe }}
+			{% endblock %}
+						
 	</body>
 </html>

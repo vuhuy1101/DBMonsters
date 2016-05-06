@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Applications/XAMPP/xamppfiles/htdocs/DBMonsters/flask"
+set -gx VIRTUAL_ENV "/Applications/XAMPP/xamppfiles/htdocs/DBMonsters/HV/flask"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

@@ -1,4 +1,4 @@
-#!/Applications/XAMPP/xamppfiles/htdocs/DBMonsters/flask/bin/python
+#!/Applications/XAMPP/xamppfiles/htdocs/DBMonsters/HV/flask/bin/python
 
 import sys
 import getopt

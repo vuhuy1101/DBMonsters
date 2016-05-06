@@ -60,9 +60,9 @@ def test():
         results = cur.fetchall()
         field_names = [str(i[0]) for i in cur.description]
         print(field_names)
-        
 
-        a="<table border='1'>" + "<tr>"
+        #a = operations()
+        a ="<table border='1'>" + "<tr>"
         for column_heading in field_names:
                 a += "<th>"+ column_heading +"</th>"
         a+= "</tr>"
@@ -76,18 +76,20 @@ def test():
                         a+="<td>"+str(insert_element)+"</td>"
                         i+=1
                 a+="</tr>"
+        a+= "</table>"
                 
 
-        
-        
-        return(a)
+        #return(a)
+        return render_template('operations.html', variable=a)
+
+
+@app.route("/operations")
+def operations():
+        return render_template('operations.html')
 
 
 
-
-
-                
-
+             
 def connect():
         try:
                 conn = mysql.connector.connect(host='localhost',
