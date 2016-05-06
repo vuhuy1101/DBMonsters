@@ -3,23 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <title>Grocery Model</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
   <body onload="setup()">
     <h1>Grocery Schema</h1>
     <h3>Identify the dimensions and attributes</h3>
-    <form action="/test" method="get" id="myForm">
-      <input id="Product" type="checkbox" name="product" value="Product" onclick="updateForm()">Product &nbsp;
-      <select id="productAttr" name="productAttr" onchange="myForm.submit()">
+    <form role="form" action="/test" method="get" id="myForm">
+      <div class="col-xs-2">
+      <div class="checkbox">
+        <label>
+        <input id="Product" type="checkbox" name="product" value="Product" onclick="updateForm()">Product 
+        </label>
+      </div>
+      
+      <select class="form-control" id="productAttr" name="productAttr" onchange="myForm.submit()">
         <option value="description">Description</option>
         <option value="brand">Brand</option>
         <option value="subcategory">Subcategory</option>
         <option value="category">Category</option>
         <option value="department">Department</option>
       </select>
-      <br>
+      </div>
       
-      <input id="Store" type="checkbox" name="store" value="Store" onclick="updateForm()">Store &nbsp;
-      <select id="storeAttr" name="storeAttr">
+      <div class="col-xs-2">
+      <div class="checkbox">
+        <label>
+        <input id="Store" type="checkbox" name="store" value="Store" onclick="updateForm()">Store 
+        </label>
+      </div>
+      <select class="form-control" id="storeAttr" name="storeAttr">
         <option value="store_number">Store Number</option>
         <option value="street_address">Street Address</option>
         <option value="city">City</option>
@@ -29,10 +43,15 @@
         <option value="district">District</option>
         <option value="region">Region</option>
       </select>
-      <br>
+      </div>
       
-      <input id="Time" type="checkbox" name="time" value="Time" onclick="updateForm()">Time &nbsp;
-      <select id="timeAttr" name="timeAttr">
+      <div class="col-xs-2">
+      <div class="checkbox">
+        <label>
+        <input id="Time" type="checkbox" name="time" value="Time" onclick="updateForm()">Time
+        </label>
+      </div>
+      <select class="form-control" id="timeAttr" name="timeAttr">
         <option value="date">Date</option>
         <option value="day_of_week">Date of Week</option>
         <option value="day_number_in_month">Day Number in Month</option>
@@ -41,17 +60,9 @@
         <option value="fiscal_period">Fiscal Period</option>
         <option value="year">Year</option>
       </select>
-      <br>
+      </div>
       
-      <input id="Promotion" type="checkbox" name="promotion" value="Promotion" onclick="updateForm()">Promotion &nbsp;
-      <select id="promotionAttr" name="promotionAttr">
-        <option value="promotion_name">Promo Name</option>
-        <option value="promo_cost">Promo Cost</option>
-        <option value="promo_begin_date">Promo Begin Date</option>
-        <option value="promo_end_date">Promo End Date</option>
-      </select>
-      <br>
-      <input type="submit" id="submit" value="Submit">
+      <input type="submit" id="submit" value="Submit" class="btn btn-info">
     </form>
     
     

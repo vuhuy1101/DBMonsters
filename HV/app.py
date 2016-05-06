@@ -62,7 +62,7 @@ def test():
         print(field_names)
 
         #a = operations()
-        a ="<table border='1'>" + "<tr>"
+        a ="<table class='table table-hover'>" + "<tr>"
         for column_heading in field_names:
                 a += "<th>"+ column_heading +"</th>"
         a+= "</tr>"

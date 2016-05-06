@@ -2,18 +2,22 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>Operations</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<p>Select your action:</p>
-			<form action='' method='get'>
-				<input id='addDim' type='radio' name='action' value='addDim' onclick='displayOption()'>Add Dimension<br>
-				<input id='removeDim' type='radio' name='action' value='removeDim' onclick='displayOption()'>Remove Dimension<br>
-				<input id='rollup' type='radio' name='action' value='rollup' onclick='displayOption()'>Roll Up<br>
-				<input id='drilldown' type='radio' name='action' value='drilldown' onclick='displayOption()'>Drill Down<br>
-				<input id='slice' type='radio' name='action' value='slice' onclick='displayOption()'>Slice<br>
-				<input id='dice' type='radio' name='action' value='dice' onclick='displayOption()'>Dice<br>
-				
+			<form role="form" action='' method='get'>
+			<div class="radio">
+				<label><input id='addDim' type='radio' name='action' value='addDim' onclick='displayOption()'>Add Dimension</label>
+				<label><input id='removeDim' type='radio' name='action' value='removeDim' onclick='displayOption()'>Remove Dimension</label>
+				<label><input id='rollup' type='radio' name='action' value='rollup' onclick='displayOption()'>Roll Up</label>
+				<label><input id='drilldown' type='radio' name='action' value='drilldown' onclick='displayOption()'>Drill Down</label>
+				<label><input id='slice' type='radio' name='action' value='slice' onclick='displayOption()'>Slice</label>
+				<label><input id='dice' type='radio' name='action' value='dice' onclick='displayOption()'>Dice</label>
+			</div>
 				<div id='addDimOption' style='display:none;'>
 					<p>This is add dimension</p>
 				</div>
