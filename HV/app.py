@@ -62,10 +62,10 @@ def test():
         print(field_names)
 
         #a = operations()
-        a ="<table class='table table-hover'>" + "<tr>"
+        a ="<table class='table table-hover' id='displayTable'>" + "<thead><tr>"
         for column_heading in field_names:
                 a += "<th>"+ column_heading +"</th>"
-        a+= "</tr>"
+        a+= "</tr></thead>"
 
 
         for row in results:
